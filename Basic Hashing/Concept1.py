@@ -1,4 +1,4 @@
-# calculate occurrence of each integer number in an array
+"""calculate occurrence of each integer number in an array"""
 
 arr = [1, 1, 1, 2, 4, 2, 4, 5, 6, 5]
 
