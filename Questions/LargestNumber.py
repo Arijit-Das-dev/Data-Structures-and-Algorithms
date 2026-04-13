@@ -1,7 +1,7 @@
 def largestNumber(arr):
-
-    max_number = arr[0]
     
+    max_number = arr[0]
+
     n = len(arr)
 
     for i in range(1, n):
