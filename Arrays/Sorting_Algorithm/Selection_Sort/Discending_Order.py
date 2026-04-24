@@ -1,19 +1,29 @@
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"""
+Question : Discending order using selection sort
 
-n = len(nums)
+"""
 
-for i in range(0, n):
+class Solution(object):
 
-    max_num = i
+    def discendingOrder(self, nums):
+                
+        n = len(nums)
 
-    for j in range(i+1, n):
+        for i in range(0, n):
 
-        if nums[j] > nums[max_num]:
+            max_num = i
 
-            max_num = j
+            for j in range(i+1, n):
 
-    temp = nums[i]
-    nums[i] = nums[max_num]
-    nums[max_num] = temp
+                if nums[j] > nums[max_num]:
 
-print(nums)
+                    max_num = j
+
+            temp = nums[i]
+            nums[i] = nums[max_num]
+            nums[max_num] = temp
+        
+        return  nums
+    
+s = Solution()
+print(s.discendingOrder(nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
