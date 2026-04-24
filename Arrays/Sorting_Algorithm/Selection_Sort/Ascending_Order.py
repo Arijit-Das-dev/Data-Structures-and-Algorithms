@@ -1,19 +1,29 @@
-nums = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+"""
+Question : Ascending Order using Selection Sort
 
-n = len(nums)
+"""
+class Solution(object):
 
-for i in range(0, n):
+    def ascendingOrder(self, nums):
+                
+        n = len(nums)
 
-    min_num = i
+        for i in range(0, n):
 
-    for j in range(i+1, n):
+            min_num = i
 
-        if (nums[j] < nums[min_num]):
+            for j in range(i+1, n):
 
-            min_num = j
+                if (nums[j] < nums[min_num]):
 
-    temp = nums[i]
-    nums[i] = nums[min_num]
-    nums[min_num] = temp
+                    min_num = j
 
-print(nums)
+            temp = nums[i]
+            nums[i] = nums[min_num]
+            nums[min_num] = temp
+
+        return nums
+    
+s = Solution()
+print(s.ascendingOrder(nums = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+))
