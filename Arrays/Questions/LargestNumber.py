@@ -1,26 +1,21 @@
-# approach 1
-nums = [1, 2, 3, 4, 5]
+"""
+Question : Largest Number in an Array of integers.
 
-n = len(nums)
-largest = float('-inf')
+"""
 
+class Solution(object):
 
-for i in range(0, n):
+    def largestNumber(self, nums):
 
-    if (nums[i] > largest):
-        largest = nums[i]
+        n = len(nums)
+        largest = float('-inf')
 
-print(largest)
+        for i in range(0, n):
 
-# approach 2
-nums = [1, 2, 3, 4, 5]
+            if (nums[i]>largest):
+                largest = nums[i]
 
-n = len(nums)
-largest_num = nums[0]
-
-for i in range(1, n):
-
-    if (nums[i] > largest_num):
-        largest_num = nums[i]
-
-print(largest_num)
+        return largest
+    
+s = Solution()
+print(s.largestNumber(nums = [52, -1, 100, 150, 1200, -120.0]))
