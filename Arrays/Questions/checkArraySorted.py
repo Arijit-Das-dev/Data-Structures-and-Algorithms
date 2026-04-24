@@ -1,3 +1,8 @@
+"""
+Question : Check array sorted or not.
+
+"""
+
 class Solution(object):
     
     def check(self, nums):
