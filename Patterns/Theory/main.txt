@@ -1,1 +1,28 @@
 Pattern problems are based on some key rules:
+
+- Row
+- Columns
+- Row means the outer loop
+- Column means the inner loop
+
+- Key points:
+
+    1. outer loops are denoted by i most of the time
+    2. inner loops are denoted by j most of the time
+    3. outer and inner loops are used to occupy the places.
+
+- range() function is used mainly to loop through rows and Columns.
+
+- About Range function:
+
+    1. range function is mainly used to loop through a specific range
+    2. Example:
+
+            - range(1, 6) = it will start from 1 and stop at 5
+            - formula = (start -> stop-1)
+            - like the example , it starts from 1 and ends at 5 (1 --- 5 (6-1))
+            - It iterates one by one like, 
+                                        
+                                        - 1, 2, 3, 4, 5
+                                        - If there is any specific task in each iterations, it will complete that's specific iteration's 
+                                          work then will move to the next iteration.
