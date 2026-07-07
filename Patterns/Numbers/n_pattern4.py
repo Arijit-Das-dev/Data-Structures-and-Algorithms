@@ -13,3 +13,6 @@ for i in range(1, 6):
         print(num, end=" ")
         num = num + 1
     print()
+
+# In the last iteration when row = 5 and column = 5, the num value will become 16
+print(f"\nThe final num value is : {num}")
