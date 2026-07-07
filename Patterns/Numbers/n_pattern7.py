@@ -16,3 +16,9 @@ for i in range(1, 6):
     print()
 
 # method 2
+num = 1
+for i in range(5, 0, -1):
+    for j in range(1, 7-num):
+        print(i, end=" ")
+    num = num + 1
+    print()
