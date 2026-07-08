@@ -1,4 +1,6 @@
 # Remove all digits from a string.
+
+# method 1
 string = "abcdefghijklmnopqrstuvwxyz12345678910"
 
 new_arr = []
@@ -12,3 +14,13 @@ for char in string:
 
 strings = "".join(new_arr)
 print(strings)
+
+# method 2
+characters = "abcdefghijklmnopqrstuvwxyz12345678910"
+new_chars = ""
+
+for char in characters:
+    if not char.isdigit():
+        new_chars += char
+
+print(new_chars)
