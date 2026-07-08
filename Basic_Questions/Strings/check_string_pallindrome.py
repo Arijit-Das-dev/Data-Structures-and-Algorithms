@@ -1,7 +1,7 @@
 # Check whether a string is a palindrome.
 
 
-def check_Pallindrome_String(string: str) -> bool:
+def check_pallindrome_string(string: str) -> bool:
 
     newString = ""
     for i in range(len(string)-1, -1, -1):
@@ -15,5 +15,5 @@ def check_Pallindrome_String(string: str) -> bool:
 string1 = "ABBA"
 string2 = "ABCA"
 
-print(check_Pallindrome_String(string=string1))
-print(check_Pallindrome_String(string=string2))
+print(check_pallindrome_string(string=string1))
+print(check_pallindrome_string(string=string2))
