@@ -1,6 +1,7 @@
 from rich import print
 
 total = 0
+nums = [1, 2, 3]
 
 while True:
 
@@ -8,23 +9,27 @@ while True:
     print("="*40)
     print("ENTER YOUR CHOICE")
 
-    ask_user = input("""
+    ask_user = int(input("""
     1. DEPOSIT [Type 1]
     2. WITHDRAW [Type 2]
     3. CHECK BALANCE [Type 3] 
-    = """)
-
-    ask_user = int(ask_user)
+    = """))
 
     if ask_user == 1:
 
         print("\n1. DEPOSIT MONEY")
-        deposit = int(input("Enter amount : "))
-        total += deposit
         
-        print(f"DEPOSITED AMOUNT : {deposit}")
-        print(f"BALANCE : {total}")
-        print("="*30)
+        deposit = int(input("Enter amount : "))
+
+        if deposit in range(1, 10000):
+
+            total += deposit
+            
+            print(f"DEPOSITED AMOUNT : {deposit}")
+            print(f"BALANCE : {total}")
+            print("="*30)
+        else:
+            print("Enter correct amount !!!")
 
     elif ask_user == 2:
 
